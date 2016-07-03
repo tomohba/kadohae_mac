@@ -27,10 +27,6 @@
     [self.image drawAtPoint:NSZeroPoint fromRect:NSZeroRect operation:NSCompositeSourceOver fraction:1.0];
 }
 
-- (void)mouseEntered:(NSEvent *)theEvent {
-    [self startMainAnimation];
-}
-
 - (void)startMainAnimation {
     if (self.animationTimer == nil || self.animationTimer.isValid == NO) {
         AppDelegate *appDelegate = (AppDelegate*) [NSApplication sharedApplication].delegate;
@@ -74,6 +70,5 @@
     AppDelegate *appDelegate = (AppDelegate*) [NSApplication sharedApplication].delegate;
     [appDelegate.window setAlphaValue:0.0];
 }
-
 
 @end
