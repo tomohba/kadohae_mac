@@ -1,0 +1,290 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EA0AB4831D293A8B00FD6A84 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EA0AB4821D293A8B00FD6A84 /* AppDelegate.m */; };
+		EA0AB4861D293A8B00FD6A84 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EA0AB4851D293A8B00FD6A84 /* main.m */; };
+		EA0AB4881D293A8B00FD6A84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA0AB4871D293A8B00FD6A84 /* Assets.xcassets */; };
+		EA0AB48B1D293A8B00FD6A84 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA0AB4891D293A8B00FD6A84 /* MainMenu.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		EA0AB47E1D293A8B00FD6A84 /* 角から生えるやつ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "角から生えるやつ.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA0AB4811D293A8B00FD6A84 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EA0AB4821D293A8B00FD6A84 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EA0AB4851D293A8B00FD6A84 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EA0AB4871D293A8B00FD6A84 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EA0AB48A1D293A8B00FD6A84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		EA0AB48C1D293A8B00FD6A84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EA0AB47B1D293A8B00FD6A84 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EA0AB4751D293A8B00FD6A84 = {
+			isa = PBXGroup;
+			children = (
+				EA0AB4801D293A8B00FD6A84 /* 角から生えるやつ */,
+				EA0AB47F1D293A8B00FD6A84 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EA0AB47F1D293A8B00FD6A84 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EA0AB47E1D293A8B00FD6A84 /* 角から生えるやつ.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EA0AB4801D293A8B00FD6A84 /* 角から生えるやつ */ = {
+			isa = PBXGroup;
+			children = (
+				EA0AB4811D293A8B00FD6A84 /* AppDelegate.h */,
+				EA0AB4821D293A8B00FD6A84 /* AppDelegate.m */,
+				EA0AB4871D293A8B00FD6A84 /* Assets.xcassets */,
+				EA0AB4891D293A8B00FD6A84 /* MainMenu.xib */,
+				EA0AB48C1D293A8B00FD6A84 /* Info.plist */,
+				EA0AB4841D293A8B00FD6A84 /* Supporting Files */,
+			);
+			path = "角から生えるやつ";
+			sourceTree = "<group>";
+		};
+		EA0AB4841D293A8B00FD6A84 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EA0AB4851D293A8B00FD6A84 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EA0AB47D1D293A8B00FD6A84 /* 角から生えるやつ */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA0AB48F1D293A8B00FD6A84 /* Build configuration list for PBXNativeTarget "角から生えるやつ" */;
+			buildPhases = (
+				EA0AB47A1D293A8B00FD6A84 /* Sources */,
+				EA0AB47B1D293A8B00FD6A84 /* Frameworks */,
+				EA0AB47C1D293A8B00FD6A84 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "角から生えるやつ";
+			productName = "角から生えるやつ";
+			productReference = EA0AB47E1D293A8B00FD6A84 /* 角から生えるやつ.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EA0AB4761D293A8B00FD6A84 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Tomonori Ohba";
+				TargetAttributes = {
+					EA0AB47D1D293A8B00FD6A84 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = EA0AB4791D293A8B00FD6A84 /* Build configuration list for PBXProject "角から生えるやつ" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EA0AB4751D293A8B00FD6A84;
+			productRefGroup = EA0AB47F1D293A8B00FD6A84 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EA0AB47D1D293A8B00FD6A84 /* 角から生えるやつ */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EA0AB47C1D293A8B00FD6A84 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA0AB4881D293A8B00FD6A84 /* Assets.xcassets in Resources */,
+				EA0AB48B1D293A8B00FD6A84 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EA0AB47A1D293A8B00FD6A84 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA0AB4861D293A8B00FD6A84 /* main.m in Sources */,
+				EA0AB4831D293A8B00FD6A84 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EA0AB4891D293A8B00FD6A84 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA0AB48A1D293A8B00FD6A84 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EA0AB48D1D293A8B00FD6A84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		EA0AB48E1D293A8B00FD6A84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		EA0AB4901D293A8B00FD6A84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "角から生えるやつ/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.tworks.osx.--------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EA0AB4911D293A8B00FD6A84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "角から生えるやつ/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.tworks.osx.--------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EA0AB4791D293A8B00FD6A84 /* Build configuration list for PBXProject "角から生えるやつ" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA0AB48D1D293A8B00FD6A84 /* Debug */,
+				EA0AB48E1D293A8B00FD6A84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA0AB48F1D293A8B00FD6A84 /* Build configuration list for PBXNativeTarget "角から生えるやつ" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA0AB4901D293A8B00FD6A84 /* Debug */,
+				EA0AB4911D293A8B00FD6A84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EA0AB4761D293A8B00FD6A84 /* Project object */;
+}
