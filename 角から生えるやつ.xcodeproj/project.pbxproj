@@ -31,6 +31,8 @@
 		EA333C4C1D2957A10093A62B /* 0.png in Resources */ = {isa = PBXBuildFile; fileRef = EA333C4B1D2957A10093A62B /* 0.png */; };
 		EA333C521D2968E00093A62B /* statusicon.png in Resources */ = {isa = PBXBuildFile; fileRef = EA333C511D2968E00093A62B /* statusicon.png */; };
 		EA333C541D296C4E0093A62B /* appicon.png in Resources */ = {isa = PBXBuildFile; fileRef = EA333C531D296C4E0093A62B /* appicon.png */; };
+		EACBCC611E0854E700D4F996 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = EACBCC5F1E0854E700D4F996 /* LICENSE */; };
+		EACBCC621E0854E700D4F996 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = EACBCC601E0854E700D4F996 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +65,8 @@
 		EA333C4B1D2957A10093A62B /* 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 0.png; sourceTree = "<group>"; };
 		EA333C511D2968E00093A62B /* statusicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = statusicon.png; sourceTree = "<group>"; };
 		EA333C531D296C4E0093A62B /* appicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appicon.png; sourceTree = "<group>"; };
+		EACBCC5F1E0854E700D4F996 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		EACBCC601E0854E700D4F996 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		EAEF0C7E1D2A3BAF008CEE91 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -80,6 +84,8 @@
 		EA0AB4751D293A8B00FD6A84 = {
 			isa = PBXGroup;
 			children = (
+				EACBCC5F1E0854E700D4F996 /* LICENSE */,
+				EACBCC601E0854E700D4F996 /* README.md */,
 				EAEF0C7E1D2A3BAF008CEE91 /* QuartzCore.framework */,
 				EA0AB4801D293A8B00FD6A84 /* 角から生えるやつ */,
 				EA0AB47F1D293A8B00FD6A84 /* Products */,
@@ -205,6 +211,7 @@
 				EA333C541D296C4E0093A62B /* appicon.png in Resources */,
 				EA333C461D293D070093A62B /* 11.png in Resources */,
 				EA333C441D293D070093A62B /* 9.png in Resources */,
+				EACBCC611E0854E700D4F996 /* LICENSE in Resources */,
 				EA333C4A1D293D070093A62B /* 15.png in Resources */,
 				EA333C471D293D070093A62B /* 12.png in Resources */,
 				EA333C431D293D070093A62B /* 8.png in Resources */,
@@ -234,6 +241,7 @@
 			files = (
 				EA0AB4971D293B8100FD6A84 /* CustomWindow.m in Sources */,
 				EA0AB4861D293A8B00FD6A84 /* main.m in Sources */,
+				EACBCC621E0854E700D4F996 /* README.md in Sources */,
 				EA0AB4831D293A8B00FD6A84 /* AppDelegate.m in Sources */,
 				EA0AB4961D293B8100FD6A84 /* CustomView.m in Sources */,
 			);
