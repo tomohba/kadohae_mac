@@ -63,6 +63,7 @@
 		EA333C4B1D2957A10093A62B /* 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 0.png; sourceTree = "<group>"; };
 		EA333C511D2968E00093A62B /* statusicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = statusicon.png; sourceTree = "<group>"; };
 		EA333C531D296C4E0093A62B /* appicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appicon.png; sourceTree = "<group>"; };
+		EAEF0C7E1D2A3BAF008CEE91 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +80,7 @@
 		EA0AB4751D293A8B00FD6A84 = {
 			isa = PBXGroup;
 			children = (
+				EAEF0C7E1D2A3BAF008CEE91 /* QuartzCore.framework */,
 				EA0AB4801D293A8B00FD6A84 /* 角から生えるやつ */,
 				EA0AB47F1D293A8B00FD6A84 /* Products */,
 			);
@@ -339,6 +341,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "角から生えるやつ/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = jp.tworks.osx.kadohae;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -351,6 +354,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "角から生えるやつ/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = jp.tworks.osx.kadohae;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

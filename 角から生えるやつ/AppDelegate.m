@@ -11,7 +11,6 @@
 @interface AppDelegate ()
 
 @property (weak) IBOutlet NSMenu *mainMenu;
-
 @property (nonatomic, strong) NSStatusItem *statusItem;
 
 @end
@@ -29,6 +28,8 @@
      {
          NSPoint point = [event locationInWindow];
          NSLog(@"global:(%lf, %lf)", point.x, point.y);
+         
+         // StatusMenuの場合、StatusMenuのWindowが取得できる（が、座標軸が違うので、ここでは無視する）
          if ([event window] == nil && point.x < 8 && point.y < 8) {
              [self.window startMainAnimation];
          }
@@ -44,7 +45,6 @@
     NSStatusBar *systemStatusBar = [NSStatusBar systemStatusBar];
     self.statusItem = [systemStatusBar statusItemWithLength:NSVariableStatusItemLength];
     [self.statusItem setHighlightMode:YES];
-//    [self.statusItem setTitle:@"角から生えるやつ"];
     [self.statusItem setImage:[NSImage imageNamed:@"statusicon"]];
     [self.statusItem setMenu:self.mainMenu];
 }

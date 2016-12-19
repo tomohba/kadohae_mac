@@ -1,3 +1,4 @@
+#import <QuartzCore/QuartzCore.h>
 #import "CustomView.h"
 #import "AppDelegate.h"
 
@@ -13,12 +14,6 @@
 
 - (void)awakeFromNib {
     self.image = [NSImage imageNamed:@"0"];
-    NSRect rect = CGRectMake(0, 0, 8, 8);
-    NSTrackingArea *area = [[NSTrackingArea alloc]initWithRect:rect
-                                                       options:NSTrackingMouseEnteredAndExited|NSTrackingActiveInActiveApp
-                                                         owner:self
-                                                      userInfo:nil];
-    [self addTrackingArea:area];
 }
 
 - (void)drawRect:(NSRect)rect {
@@ -30,6 +25,12 @@
 - (void)startMainAnimation {
     if (self.animationTimer == nil || self.animationTimer.isValid == NO) {
         AppDelegate *appDelegate = (AppDelegate*) [NSApplication sharedApplication].delegate;
+
+        
+        // スクリーンサイズが変更されている可能性があるので、アニメーション開始時にウインドウ位置を修正
+        [appDelegate.window setFrame:CGRectMake(0, 0, [appDelegate.window frame].size.width , [appDelegate.window frame].size.height) display:YES];
+
+        // 表示開始
         [appDelegate.window setAlphaValue:1.0];
         
         self.animationFrame = 0;
@@ -41,7 +42,7 @@
     }
 }
 
--(void)mainAnimation:(NSTimer*)timer{
+-(void)mainAnimation:(NSTimer*)timer {
     NSString *imageNamed = [NSString stringWithFormat:@"%ld", (long)self.animationFrame];
     self.image = [NSImage imageNamed:imageNamed];
     [self setNeedsDisplay:YES];
@@ -49,26 +50,50 @@
     self.animationFrame++;
     if (self.animationFrame == 16) {
         [self.animationTimer invalidate];
-        [self startEndAnimation];
+        [self startMidAnimation];
     }
 }
 
-- (void)startEndAnimation {
-    self.animationFrame = 0;
+- (void)startMidAnimation {
     self.animationTimer = [NSTimer scheduledTimerWithTimeInterval:1.5
+                                                           target:self
+                                                         selector:@selector(midAnimation:)
+                                                         userInfo:nil
+                                                          repeats:NO];
+    
+}
+
+- (void)midAnimation:(NSTimer*)timer {
+    [self.animationTimer invalidate];
+    [self startEndAnimation];
+}
+
+
+- (void)startEndAnimation {
+    self.animationFrame = 5;
+    self.animationTimer = [NSTimer scheduledTimerWithTimeInterval:0.025
                                                            target:self
                                                          selector:@selector(endAnimation:)
                                                          userInfo:nil
-                                                          repeats:NO];
+                                                          repeats:YES];
 }
 
--(void)endAnimation:(NSTimer*)timer{
+- (void)endAnimation:(NSTimer*)timer {
     NSString *imageNamed = [NSString stringWithFormat:@"%ld", (long)self.animationFrame];
     self.image = [NSImage imageNamed:imageNamed];
     [self setNeedsDisplay:YES];
 
     AppDelegate *appDelegate = (AppDelegate*) [NSApplication sharedApplication].delegate;
-    [appDelegate.window setAlphaValue:0.0];
+    
+    // 表示終了
+    // 徐々にFadeout
+    [appDelegate.window setAlphaValue:(self.animationFrame / 5.0)];
+    
+    self.animationFrame--;
+    if (self.animationFrame == -1) {
+        [self.animationTimer invalidate];
+        self.animationFrame = 0;
+    }
 }
 
 @end

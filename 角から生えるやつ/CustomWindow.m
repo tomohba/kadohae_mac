@@ -27,10 +27,6 @@
     return self;
 }
 
-- (BOOL)canBecomeKeyWindow {
-    return NO;
-}
-
 - (void)startMainAnimation {
     if (self.customView != nil) {
         [self.customView startMainAnimation];
