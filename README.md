@@ -1,5 +1,5 @@
 # kadohae
-角から生えるやつ
+角から生えるやつ for macOS
 
 #License
-This library released under the MIT License.
+This program released under the MIT License.
